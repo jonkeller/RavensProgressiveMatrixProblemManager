@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #bbd;
+    height: 100vh;
+}
+.header {
+    padding: 20px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+.header a {
+    text-decoration: none;
+}
+.header a,
+.header a:hover,
+.header a:active,
+.header a:focus,
+.header a:visited {
+    color: white;
+}
+.content {
+    margin-bottom: 2.8em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 20px;
+    font-size: .7em;
+    line-height: 1em;
+    margin-top: 1em;
+    background-color: black;
+    color: white;
+}
+
+.figure-list {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.figure {
+    display:block;
+    flex:0;
+    padding: 10px;
+}
