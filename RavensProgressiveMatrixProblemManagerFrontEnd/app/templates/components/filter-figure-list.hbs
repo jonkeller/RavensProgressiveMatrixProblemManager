@@ -1,9 +1,15 @@
-(Filtering will filter out ALL shapes which have no verbal data!)<br/>
-Shape: {{input value=filter key-up=(action 'autoComplete')}} 
-<button {{action 'search'}}>Search</button>
-
+<div class="filter-figure-list">
+    <h3>Filtering</h3>
+    Note: If you search for shape=square, fill=yes, you will get a list of all figures which contain a square AND contain a filled shape. But the square and the filled shape don't necessarily have to be the same object within the figure.<br />
+    Shape: {{input value=filterShape}} <!-- key-up=(action 'autoComplete') -->
+    Fill: {{input value=filterFill}} 
+    Size: {{input value=filterSize}} 
+    <button {{action 'search'}}>Search</button>
+</div>
+<!--
 <ul>
 {{#each filteredList as |item|}}
   <li {{action 'choose' item}}>{{item}}</li>
 {{/each}}
 </ul>
+-->

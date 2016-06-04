@@ -44,20 +44,59 @@ router.get('/api/v1/figures', function(req, res) {
                         attributes: {
                             name: figureName,
                             visual: visualData.toString('base64'),
-                            verbal: verbalData
+                            verbal: toJSON(verbalData)
                         }
                     };
                 });
-        if (req.query.shape) {
+        // TODO: Make these be ANDed at the object level.
+        console.dir('Before: ' + req.query);
+        req.query = _.pickBy(req.query, function(q) { return !_.isEmpty(q); });
+        console.dir('After: ' + req.query);
+        if (req.query.shape || req.query.fill || req.query.size) {
             data = _.filter(data, function(d) {
                 if (!d.attributes.verbal) {
                     return false;
                 }
-                return -1 != d.attributes.verbal.indexOf('shape:'+req.query.shape);
+                return _.some(d.attributes.verbal.objects, req.query);
             });
         }
         res.send({ data: data });
     });
 });
 
+function toJSON(data) {
+    if (!data) {
+        return '';
+    }
+    var figure = { objects: [] };
+    //console.log('data: ' + data);
+    var lines = data.split('\n');
+    //console.log('lines: ' + lines);
+    for (var i=0; i<lines.length; ++i) {
+        var line = lines[i];
+        if (!line) {
+            continue;
+        }
+        if (!line.startsWith('\t')) {
+            // Start of figure
+            figure.name = line;
+        } else if (!line.startsWith('\t\t')) {
+            // Start of object
+            //console.log('Object: ' + line);
+            //console.log('Object #: ' + figure.objects.length);
+            figure.objects.push({ name: line.trim() });
+        } else {
+            // Attribute
+            //console.log('Attr: ' + line);
+            entry = line.trim().split(':');
+            key = entry[0];
+            val = entry[1];
+            //console.log('key: ' + key);
+            //console.log('val: ' + val);
+            figure.objects[figure.objects.length-1][key]=val;
+        }
+    }
+    //console.dir(figure);
+    return figure;
+}
 module.exports = router;

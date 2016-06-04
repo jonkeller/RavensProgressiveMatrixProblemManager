@@ -38,6 +38,14 @@ body {
     color: white;
 }
 
+.filter-figure-list {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+}
+.filter-figure-list h3 {
+    margin-top: 5px;
+}
 .figure-list {
     display:flex;
     flex-direction:row;

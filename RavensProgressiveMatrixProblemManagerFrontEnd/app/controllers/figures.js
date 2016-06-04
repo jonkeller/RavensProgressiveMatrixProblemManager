@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
     autoComplete(param) {
       // This DOES get called
       if (param !== '') {
-        this.get('store').query('figure', { shape: param }).then((result) => this.set('filteredList', result));
+        this.get('store').query('figure', param).then((result) => this.set('filteredList', result));
       } else {
         this.set('filteredList', null);
       }
@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
     search(param) {
       // This DOES get called
       if (param !== '') {
-        this.store.query('figure', { shape: param }).then((result) => this.set('model', result));
+        this.store.query('figure', param).then((result) => this.set('model', result));
       } else {
         this.store.findAll('figure').then((result) => this.set('model', result));
       }

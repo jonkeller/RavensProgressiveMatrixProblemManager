@@ -6,7 +6,7 @@
   {{#each figures as |figure|}}
     <div class="figure">
       <span class="figure-name">{{figure.name}}:</span>
-      <img class="figure-image" src="data:image/png;base64,{{figure.visual}}" title="{{figure.verbal}}">
+      <img class="figure-image" src="data:image/png;base64,{{figure.visual}}" title="{{figure.verbalAsString}}">
     </div>
   {{/each}}
 </div>
