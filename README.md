@@ -6,8 +6,10 @@ It exists in two parts, a back-end and a front-end.
 
 ## Back-End
 This is a nodeJS / Express app. It implements a REST API.
+
 Example:
-http://localhost:3000/api/v1/figures?shape=square -> returns a JSON blob representing all figures which contain at least one square.
+
+http://localhost:3000/api/v1/figures?shape=square -> returns a JSON blob representing all figures whose verbal descriptions contain at least one square.
 
 To start it:
 * cd RavensProgressiveMatrixProblemManagerBackEnd
