@@ -6,7 +6,7 @@ It exists in two parts, a back-end and a front-end.
 
 ## Prerequisites
 Install the FigureCollector and ProblemGenerator Java classes. (TODO: Put a link to them here) The directory structure should look like:
-* Wherever you put this
+* Wherever you put the KBAI project
   * Project-Code-Java <- From KBAI
     * Problems <- From KBAI
       * MyGeneratedProblems <- Create this directory
