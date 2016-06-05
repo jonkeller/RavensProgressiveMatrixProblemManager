@@ -10,6 +10,8 @@ This is a nodeJS / Express app. It implements a REST API.
 Example:
 
 http://localhost:3000/api/v1/figures?shape=square -> returns a JSON blob representing all figures whose verbal descriptions contain at least one square.
+http://localhost:3000/api/v1/figures?shape=square&fill=yes&size=huge -> returns a JSON blob representing all figures whose verbal descriptions contain at least one huge filled square.
+Currently shape, size, and fill are the only 3 attributes it can search on. Partial strings like "squa" don't work yet, and it's also currently case-sensitive.
 
 To start it:
 * cd RavensProgressiveMatrixProblemManagerBackEnd
@@ -17,6 +19,7 @@ To start it:
 ** This will likely change, and a tool to generate that set may be provided.
 * npm install
 * npm start
+* Test at the URLs given above.
 
 ## Front-End
 This is an Ember application which uses the REST API.
