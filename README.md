@@ -49,3 +49,6 @@ To install and start it:
 * Paste in command prompt, in Project-Code-Java directory
 * Manually add the problem name to Project-Code-Java/Problems/MyGeneratedProblems/ProblemList.txt
 
+![screenshot](https://raw.githubusercontent.com/jonkeller/RavensProgressiveMatrixProblemManager/master/img/Screen%20Shot%202016-06-05%20at%209.22.54%20AM.png?token=ACV2Bx1aVPlPgrXLKf1TsNs4VVjbDZXRks5XXXLXwA%3D%3D)
+
+![screenshot](https://raw.githubusercontent.com/jonkeller/RavensProgressiveMatrixProblemManager/master/img/Screen%20Shot%202016-06-05%20at%209.24.24%20AM.png?token=ACV2BzC2T7pEpLS7dMQQcvtzLsZW2TyGks5XXXMIwA%3D%3D)
