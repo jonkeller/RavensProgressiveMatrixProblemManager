@@ -1,0 +1,8 @@
+<div class="problem-designer">
+  <div class="problem-canvas-container">
+    {{problem-canvas}}
+  </div>
+  <div class="figure-list-container">
+    {{figure-list title="List of Figures" figures=model filterFigureList=(action 'filterFigureList') autoComplete=(action 'autoComplete') search=(action 'search')}}
+  </div>
+</div>

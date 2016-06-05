@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('figures');
+  this.route('problem-designer');
 });
 
 export default Router;

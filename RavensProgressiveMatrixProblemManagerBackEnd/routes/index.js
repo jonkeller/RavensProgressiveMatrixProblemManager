@@ -57,6 +57,7 @@ router.get('/api/v1/figures', function(req, res) {
                 if (!d.attributes.verbal) {
                     return false;
                 }
+                // TODO: Would be nice to handle if it just starts with the query
                 return _.some(d.attributes.verbal.objects, req.query);
             });
         }

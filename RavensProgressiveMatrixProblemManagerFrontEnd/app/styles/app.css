@@ -37,7 +37,21 @@ body {
     background-color: black;
     color: white;
 }
-
+.filter-controls {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+.filter-control {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.filter-control, .filter-control span, .filter-control input, .filter-control button {
+    padding: 0.3em;
+    flex-grow:0;
+}
 .filter-figure-list {
     border: 1px solid black;
     border-radius: 3px;
@@ -52,9 +66,62 @@ body {
     flex-wrap:wrap;
     justify-content:center;
 }
-
 .figure {
     display:block;
     flex:0;
     padding: 10px;
+}
+.problem-designer {
+    display:flex;
+    flex-direction:row;
+}
+.problem-canvas-container {
+    flex:4;
+}
+#command {
+    display: inline-block;
+    font-family: monospace;
+    border: 2px dashed black;
+    padding: 2px;
+    min-width: 100px;
+}
+.problem-canvas {
+    display:flex;
+    padding-top: 2em;
+}
+.problem-canvas .given,
+.problem-canvas .answers {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    /*padding: 2%;*/
+}
+.row {
+    flex:0;
+    display:flex;
+    flex-direction:row;
+    margin-bottom: 1em;
+}
+.figure-container {
+    flex:1;
+}
+.figure-container .figure-label,
+#problem-answer {
+    display: block;
+    width: 186px;
+    margin: auto;
+}
+.figure-landing-spot {
+    width: 184px;
+    height: 184px;
+    border: 1px solid #555;
+    background-color: #aaa;
+    margin:auto;
+}
+.problem-designer .figure-list-container {
+    flex:1;
+    border-left: 3px solid black;
+    padding-left: 10px;
+    overflow:auto;
+    height:100vh;
 }

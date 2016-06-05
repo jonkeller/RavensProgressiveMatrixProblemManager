@@ -1,10 +1,20 @@
 <div class="filter-figure-list">
     <h3>Filtering</h3>
     Note: If you search for shape=square, fill=yes, you will get a list of all figures which contain a square AND contain a filled shape. But the square and the filled shape don't necessarily have to be the same object within the figure.<br />
-    Shape: {{input value=filterShape}} <!-- key-up=(action 'autoComplete') -->
-    Fill: {{input value=filterFill}} 
-    Size: {{input value=filterSize}} 
-    <button {{action 'search'}}>Search</button>
+    <div class="filter-controls">
+      <div class="filter-control">
+        <span>Shape:</span>{{input value=filterShape}} <!-- key-up=(action 'autoComplete') -->
+      </div>
+      <div class="filter-control">
+        <span>Fill:</span>{{input value=filterFill}} 
+      </div>
+      <div class="filter-control">
+        <span>Size:</span>{{input value=filterSize}} 
+      </div>
+      <div class="filter-control">
+        <button {{action 'search'}}>Search</button>
+      </div>
+    </div>
 </div>
 <!--
 <ul>

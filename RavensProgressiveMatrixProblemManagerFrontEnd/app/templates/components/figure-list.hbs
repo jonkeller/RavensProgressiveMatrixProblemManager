@@ -1,12 +1,11 @@
-<h2>{{title}}</h2>
+<div class="figure-list-component">
+  <h2>{{title}}</h2>
 
-{{filter-figure-list filteredList=filteredList autoComplete=(action 'autoComplete') search=(action 'search')}}
+  {{filter-figure-list filteredList=filteredList autoComplete=(action 'autoComplete') search=(action 'search')}}
 
-<div class="figure-list">
-  {{#each figures as |figure|}}
-    <div class="figure">
-      <span class="figure-name">{{figure.name}}:</span>
-      <img class="figure-image" src="data:image/png;base64,{{figure.visual}}" title="{{figure.verbalAsString}}">
-    </div>
-  {{/each}}
+  <div class="figure-list">
+    {{#each figures as |figure|}}
+      {{ravens-figure figure=figure}}
+    {{/each}}
+  </div>
 </div>
