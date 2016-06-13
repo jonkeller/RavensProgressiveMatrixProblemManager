@@ -51,7 +51,7 @@ This is an Ember application which uses the REST API.
 
 To install and start it:
 * Install ember, if you haven't already:
-  * brew install bower (if you're a Mac user)
+  * npm install -g bower
   * npm install -g ember-cli
   * bower install
 * cd RavensProgressiveMatrixProblemManagerFrontEnd
