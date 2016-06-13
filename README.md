@@ -6,16 +6,20 @@ It exists in two parts, a back-end and a front-end.
 It depends on code from Georgia Tech's CS7637 Knowledge-Based AI. So if you're not in that class, this will not be very useful to you.
 
 ## Prerequisites
-Download and compile the FigureCollector and ProblemGenerator Java classes from @220 and @222. (TODO: Put a better link to them here) The directory structure should look like:
+Download and compile the FigureCollector and ProblemGenerator Java classes. Take the "test" directory from put-the-contents-of-this-in-ravensproject-directory/test and copy it over so that it is at Project-Code-Java/ravensproject/test. (The Project-Code-Java is obtained from the github link provided by the course instructors - I cannot provide this code to non-students.)
+
+The directory structure should look like:
 * Wherever you put the KBAI project
   * Project-Code-Java <- From KBAI
     * Problems <- From KBAI
-      * MyGeneratedProblems <- Create this directory
+      * MyGeneratedProblems <- Create this directory after running the FigureCollector
     * ravensproject <- From KBAI
       * test <- Create this directory and put FigureCollector.java, ProblemGenerator.java here
   * RavensProgressiveMatrixProblemManager <-- Git clone this repo to here
 
-Also, add "MyGeneratedProblems" to Project-Code-Java/Problems/ProblemSetList.txt
+Run the FigureCollector
+
+Also, add "MyGeneratedProblems" to Project-Code-Java/Problems/ProblemSetList.txt, again after running the FigureCollector. Otherwise it will try to collect the figures from the problems which you haven't generated yet, because you don't have the figures yet ;)
 
 ## Caveats
 * Currently it only does 2x2 matrices. The underlying ProblemGenerator utility will do 3x3 matrices, I just didn't make a UI for 3x3 matrices yet.
