@@ -71,11 +71,17 @@ body {
     flex:0;
     padding: 10px;
 }
-.problem-designer {
+.figure-image {
+    width: 10vw;
+    height: auto;
+}
+.problem-designer,
+.problem-designer-3x3 {
     display:flex;
     flex-direction:row;
 }
-.problem-canvas-container {
+.problem-canvas-container,
+.problem-canvas-container-3x3 {
     flex:4;
 }
 #command {
@@ -91,7 +97,7 @@ body {
 }
 .problem-canvas .given,
 .problem-canvas .answers {
-    flex:1;
+    flex: 1 0 auto;
     display:flex;
     flex-direction: column;
     /*padding: 2%;*/
@@ -108,17 +114,18 @@ body {
 .figure-container .figure-label,
 #problem-answer {
     display: block;
-    width: 186px;
+    width: 10vw;
     margin: auto;
 }
 .figure-landing-spot {
-    width: 184px;
-    height: 184px;
+    width: 10vw;
+    height: 10vw;
     border: 1px solid #555;
     background-color: #aaa;
     margin:auto;
 }
-.problem-designer .figure-list-container {
+.problem-designer .figure-list-container,
+.problem-designer-3x3 .figure-list-container {
     flex:1;
     border-left: 3px solid black;
     padding-left: 10px;
