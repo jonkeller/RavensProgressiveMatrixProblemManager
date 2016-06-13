@@ -17,9 +17,11 @@ The directory structure should look like:
       * test <- Create this directory and put FigureCollector.java, ProblemGenerator.java here
   * RavensProgressiveMatrixProblemManager <-- Git clone this repo to here
 
-Run the FigureCollector
+Run the FigureCollector.
 
-Also, add "MyGeneratedProblems" to Project-Code-Java/Problems/ProblemSetList.txt, again after running the FigureCollector. Otherwise it will try to collect the figures from the problems which you haven't generated yet, because you don't have the figures yet ;)
+Then go back and create the "MyGeneratedProblems" directory once that is done.
+
+Also, add "MyGeneratedProblems" to Project-Code-Java/Problems/ProblemSetList.txt. Again, do this after running the FigureCollector. Otherwise it will try to collect the figures from the problems which you haven't generated yet, because you don't have the figures yet ;)
 
 ## Caveats
 * Currently it only does 2x2 matrices. The underlying ProblemGenerator utility will do 3x3 matrices, I just didn't make a UI for 3x3 matrices yet.
@@ -48,7 +50,8 @@ To install and start it:
 This is an Ember application which uses the REST API.
 
 To install and start it:
-* Install ember? Not sure if this is needed or if the "npm install" below takes care of it.
+* Install ember, if you haven't already:
+  * npm install -g ember-cli
 * cd RavensProgressiveMatrixProblemManagerFrontEnd
 * npm install
 * ember server
