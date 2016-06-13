@@ -37,6 +37,7 @@ http://localhost:3000/api/v1/figures?shape=square&fill=yes&size=huge -> returns 
 Currently shape, size, and fill are the only 3 attributes it can search on. Partial strings like "squa" don't work yet, and it's also currently case-sensitive.
 
 To install and start it:
+* Install NodeJS and npm
 * cd RavensProgressiveMatrixProblemManagerBackEnd
 * Ensure that the set of all figures is in ../../Project-Code-Java/Problems/AllGivenFigures
 * npm install
@@ -47,6 +48,7 @@ To install and start it:
 This is an Ember application which uses the REST API.
 
 To install and start it:
+* Install ember? Not sure if this is needed or if the "npm install" below takes care of it.
 * cd RavensProgressiveMatrixProblemManagerFrontEnd
 * npm install
 * ember server
