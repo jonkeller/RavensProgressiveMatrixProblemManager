@@ -24,7 +24,7 @@ Then go back and create the "MyGeneratedProblems" directory once that is done.
 Also, add "MyGeneratedProblems" to Project-Code-Java/Problems/ProblemSetList.txt. Again, do this after running the FigureCollector. Otherwise it will try to collect the figures from the problems which you haven't generated yet, because you don't have the figures yet ;)
 
 ## Caveats
-* Currently it only does 2x2 matrices. The underlying ProblemGenerator utility will do 3x3 matrices, I just didn't make a UI for 3x3 matrices yet.
+* Currently it only does 2x2 matrices. The underlying ProblemGenerator utility will do 3x3 matrices, I just didn't make a UI for 3x3 matrices yet. UPDATE: It will do 3x3 matrices, but the layout needs some work so that everything will fit on the same page nicely. This has not been tested much yet.
 * It doesn't create the single big .png file with all 9 figures in it. Only the individual figure .png files, ProblemData.txt, and ProblemAnswer.txt.
 
 ## Back-End
