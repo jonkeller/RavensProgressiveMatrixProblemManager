@@ -1,0 +1,101 @@
+  <div class="generator-string">
+    Problem Name: {{input problemName id="problem-name"}}
+    <button {{action 'generateCommand'}}>Create</button> <button {{action 'clearAll'}}>Clear All</button><br />
+    To create this problem, click the button above, then run the command that will appear below:<br />
+    <div id="command"></div>
+  </div>
+  <div class="problem-canvas">
+    <div class="given">
+      <div class="row">
+        <div class="figure-container">
+          <div class="figure-label">A:</div>
+          {{figure-landing-spot id="figure-landing-spot-A"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">B:</div>
+          {{figure-landing-spot id="figure-landing-spot-B"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">C:</div>
+          {{figure-landing-spot id="figure-landing-spot-C"}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="figure-container">
+          <div class="figure-label">D:</div>
+          {{figure-landing-spot id="figure-landing-spot-D"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">E:</div>
+          {{figure-landing-spot id="figure-landing-spot-E"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">F:</div>
+          {{figure-landing-spot id="figure-landing-spot-F"}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="figure-container">
+          <div class="figure-label">G:</div>
+          {{figure-landing-spot id="figure-landing-spot-G"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">H:</div>
+          {{figure-landing-spot id="figure-landing-spot-H"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">Correct answer:</div>
+          <select id="problem-answer">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="answers">
+      <div class="row">
+        <div class="figure-container">
+          <div class="figure-label">1:</div>
+          {{figure-landing-spot id="figure-landing-spot-1"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">5:</div>
+          {{figure-landing-spot id="figure-landing-spot-5"}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="figure-container">
+          <div class="figure-label">2:</div>
+          {{figure-landing-spot id="figure-landing-spot-2"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">6:</div>
+          {{figure-landing-spot id="figure-landing-spot-6"}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="figure-container">
+          <div class="figure-label">3:</div>
+          {{figure-landing-spot id="figure-landing-spot-3"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">7:</div>
+          {{figure-landing-spot id="figure-landing-spot-7"}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="figure-container">
+          <div class="figure-label">4:</div>
+          {{figure-landing-spot id="figure-landing-spot-4"}}
+        </div>
+        <div class="figure-container">
+          <div class="figure-label">8:</div>
+          {{figure-landing-spot id="figure-landing-spot-8"}}
+        </div>
+      </div>
+    </div>
+  </div>
