@@ -1,4 +1,4 @@
-# RavensProgressiveMatrixProblemManager
+# Raven's Progressive Matrix Problem Manager
 
 This is a project for generating Ravens Progressive Matrix problems.
 It's not complete yet.
@@ -8,11 +8,11 @@ It depends on code from Georgia Tech's CS7637 Knowledge-Based AI. So if you're n
 ## Prerequisites
 Download and compile the FigureCollector and ProblemGenerator Java classes. Take the "test" directory from put-the-contents-of-this-in-ravensproject-directory/test and copy it over so that it is at Project-Code-Java/ravensproject/test. (The Project-Code-Java is obtained from the github link provided by the course instructors - I cannot provide this code to non-students.)
 
-The directory structure should look like:
+After installation, the directory structure will look like this:
 * Wherever you put the KBAI project
   * Project-Code-Java <- From KBAI
     * Problems <- From KBAI
-      * MyGeneratedProblems <- Create this directory after running the FigureCollector
+      * MyGeneratedProblems <- Create this directory _after_ running the FigureCollector
     * ravensproject <- From KBAI
       * test <- Create this directory and put FigureCollector.java, ProblemGenerator.java here
   * RavensProgressiveMatrixProblemManager <-- Git clone this repo to here
